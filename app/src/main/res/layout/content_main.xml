@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+
+        android:text="Log In "
+        android:textSize="50sp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="User Name"
+        android:layout_marginTop="50dp"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Password"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Doctor"
+                android:background="#F44336"
+                android:layout_marginRight="5dp"
+                android:padding="20dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:onClick="gotoNewActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Patient"
+                android:background="#F44336"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:padding="20dp"
+                android:onClick="gotoNewActivity1"
+                android:typeface="monospace"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup"
+        android:text="Sign Up Now"
+        android:background="#F44336"
+        android:layout_marginTop="30dp"
+        android:padding="18dp"
+        android:onClick="gotoNewActivity2"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
